@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: white;
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;
+        }
+
+        form {
+            width: 80%; 
+            max-width: 600px; 
+        }
+
+        ul {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        p{
+            font-weight: 700;
+            color:  #8c88d7;
+            font-size: 50px;
+        }
+    </style>
+
+    <p>Join Us and Horses Today!</p>
+
+</head>
+<body>
+    
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Book Your Riding Lesson!</legend>
+
+            <label for="numberOfPeople">How many people will be arriving with you:</label>
+            <input type="number" id="numberOfPeople" name="numberOfPeople" required><br><br>
+            
+            <label for="dayofthelesson">Choose the preferred day of the lesson:</label>
+            <select id="dayofthelesson" name="dayofthelesson" required>
+                <option value="">Select:</option>
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">wednesday</option>
+            </select><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Do you have any health conditions, injuries that our coach should know about?</legend>
+            <textarea id="instructions" name="instructions" rows="4" cols="50"></textarea>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Subscribe for our daily news about our place!</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Cancel">
+    </form>
+</body>
+</html>
